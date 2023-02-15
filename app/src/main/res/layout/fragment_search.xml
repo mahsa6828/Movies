@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.search.SearchFragment">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/searchEdt"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_shape"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="search..."
+        android:textColor="@color/white"
+        android:textColorHint="@color/philippineSilver"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/rcSearch"
+        app:layout_constraintTop_toBottomOf="@id/searchEdt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingTop="10dp"
+        android:clipToPadding="false"/>
+    <ProgressBar
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/progresSearch"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/emtyItemLayout"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/searchEdt"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <include layout="@layout/emty_item"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

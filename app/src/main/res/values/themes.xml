@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/crayola</item>
+        <item name="colorPrimaryVariant">@color/chineseBlack</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/crayola</item>
+        <item name="colorSecondaryVariant">@color/crayola</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/chineseBlack</item>
+    </style>
+    <style name="customFilledBox" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="hintTextColor">@color/crayola</item>
+        <item name="strokeColor">@color/crayola</item>
+        <item name="boxBackgroundColor">@color/gunmetal</item>
+        <item name="startIconTint">@color/philippineSilver</item>
+    </style>
+    <style name="customShapeImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+</resources>

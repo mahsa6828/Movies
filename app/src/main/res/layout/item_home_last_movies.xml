@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:id="@+id/cardPoster"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="110dp"
+        android:layout_height="150dp">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/imgPoster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/movieNameTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toEndOf="@id/cardPoster"
+        app:layout_constraintTop_toTopOf="@id/cardPoster"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="7dp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/cardPoster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movieNameTxt"
+        android:id="@+id/movieRateTxt"
+        android:drawableTint="@color/philippineSilver"
+        android:textSize="10sp"
+        android:text="hello"
+        android:gravity="center_vertical"
+        android:textColor="@color/philippineSilver"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="5dp"
+        android:layout_marginHorizontal="7dp"
+        app:drawableStartCompat="@drawable/ic_round_star_24" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/cardPoster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movieRateTxt"
+        android:id="@+id/movieCountryTxt"
+        android:drawableTint="@color/philippineSilver"
+        android:textSize="10sp"
+        android:text="hello"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/philippineSilver"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="7dp"
+        app:drawableStartCompat="@drawable/ic_round_language_24" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/cardPoster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movieCountryTxt"
+        android:id="@+id/movieCalenderTxt"
+        android:drawableTint="@color/philippineSilver"
+        android:textSize="10sp"
+        android:gravity="center_vertical"
+        android:drawablePadding="5dp"
+        android:textColor="@color/philippineSilver"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="7dp"
+        app:drawableStartCompat="@drawable/ic_round_calendar_today_24" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/cardPoster"
+        app:layout_constraintTop_toBottomOf="@id/movieCalenderTxt"
+        android:id="@+id/movieMoreTxt"
+        android:drawableTint="@color/scarlet"
+        android:textSize="10sp"
+        android:textColor="@color/scarlet"
+        android:text="more info"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="7dp"
+        app:drawableEndCompat="@drawable/ic_round_chevron_right_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
